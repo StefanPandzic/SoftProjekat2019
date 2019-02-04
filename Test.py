@@ -3,6 +3,7 @@ import sys
 
 res = []
 n = 0
+
 with open('res.txt') as file:	
     data = file.read()
     lines = data.split('\n')
