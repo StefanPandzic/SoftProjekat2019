@@ -1,0 +1,7 @@
+jupyter
+keras
+numpy
+scipy
+tensorflow
+tensorflow-gpu
+theano
