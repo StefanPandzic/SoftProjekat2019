@@ -30,9 +30,10 @@ def priprema_za_mrezu(numbers):
     priprema = []
 
     for number in numbers:
-        scaled = konverzija_u_bin(number)
-        priprema.append(matrix_to_vector(scaled))
-        priprema = np.array(priprema, np.float32)
+        skalirano = konverzija_u_bin(number)
+        priprema.append(matrix_to_vector(skalirano))
+
+    priprema = np.array(priprema, np.float32)
 
     return priprema
 
