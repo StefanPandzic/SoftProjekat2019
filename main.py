@@ -137,13 +137,13 @@ def pracenje_brojeva(x, y, brojevi_prosli, frejm):
     prosli = False
 
     if len(brojevi_prosli) > 0:
-        for brojevi_prosli in brojevi_prosli:
-            if x == brojevi_prosli[0] or y == brojevi_prosli[1]:
+        for broj_prosao in brojevi_prosli:
+            if x == broj_prosao[0] or y == broj_prosao[1]:
                 prosli = True
 
             if prosli == False:
-                if distance(x, y, brojevi_prosli[0], brojevi_prosli[1]) < 18:
-                    if (frejm - brojevi_prosli[2]) < 20:
+                if distance(x, y, broj_prosao[0], broj_prosao[1]) < 18:
+                    if (frejm - broj_prosao[2]) < 20:
                         prosli = True
 
     if prosli == False:
@@ -186,7 +186,7 @@ for idx in range(10):
         if not ret:
             break
         izolirano = izoliraj_brojeve(frejm)
-        coordinates_list = konture_brojeva(izolirano)
+        lista_kordinata = konture_brojeva(izolirano)
 
         for kordinate in lista_kordinata:
             (x, y, w, h) = kordinate
